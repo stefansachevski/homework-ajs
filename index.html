@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Car Filter</h1>
+  
+  <label for="type">Type:</label>
+  <select id="type">
+    <option value="">Any</option>
+  </select>
+  
+  <label for="brand">Brand:</label>
+  <select id="brand">
+    <option value="">Any</option>
+  </select>
+  
+  <label for="model">Model:</label>
+  <input type="text" id="model">
+  
+  <label for="doors">Doors:</label>
+  <input type="number" id="doors">
+  
+  <label for="gasType">Gas Type:</label>
+  <select id="gasType">
+    <option value="">Any</option>
+  </select>
+  
+  <label for="color">Color:</label>
+  <select id="color">
+    <option value="">Any</option>
+  </select>
+  
+  <label for="isNew">New:</label>
+  <input type="checkbox" id="isNew">
+  
+  <label for="isOld">Old:</label>
+  <input type="checkbox" id="isOld">
+  
+  <label for="horsepower">Horsepower:</label>
+  <input type="range" id="horsepower" min="0" max="300">
+  <span id="horsepowerValue">0</span>
+  
+  <button onclick="filterCars()">Search</button>
+  
+  <table id="carTable">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Doors</th>
+        <th>Gas Type</th>
+        <th>Color</th>
+        <th>New</th>
+        <th>Horsepower</th>
+      </tr>
+    </thead>
+    <tbody id="carTableBody">
+    </tbody>
+  </table>
+    <script src="./script.js"></script>
+</body>
+</html>

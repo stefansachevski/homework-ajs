@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JediArchives</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="./style.css" type = "text/css" />
+	</head>
+	<body>
+		<img src="./images/logo.png" alt="star wars logo" class="center medium" />
+		<div class="row">
+			<div class="col"></div>
+			<div class="col">
+				<img 
+					src="./images/cosmonaut.svg"
+					alt="person"
+					class="center small imgBtn"
+					id="peopleBtn" />
+			</div>
+			<div class="col">
+				<img
+					src="./images/rocket.svg"
+					alt="ship"
+					class="center small imgBtn"
+					id="shipsBtn" />
+			</div>
+			<div class="col"></div>
+		</div>
+		<img src="./images/loader.gif" class="center" id="loader" />
+		
+		<div class="row">
+			<div class="col"></div>
+			<div class="col">
+				<button class="btn btn-warning center" id="prevBtn">PREV</button>
+			</div>
+			<div class="col">
+				<button class="btn btn-warning center" id="nextBtn">NEXT</button>
+			</div>
+			<div class="col"></div>
+		</div>
+		<!-- TABLE START -->
+		<div id="result">
+			<div class="row yellow padding">
+				<div class="col">Name:</div>
+				<div class="col">Height:</div>
+				<div class="col">Mass:</div>
+				<div class="col">Gender:</div>
+				<div class="col">Birth Year:</div>
+				<div class="col">Films:</div>
+			</div>
+			<div id="result-2" class="row white padding">
+			</div>
+		</div>
+		<div id="result-ships">
+			<div class="row yellow padding">
+				<div class="col">Name:</div>
+				<div class="col">Model:</div>
+				<div class="col">Length:</div>
+				<div class="col">Crew:</div>
+				<div class="col">Cargo Capacity</div>
+				<div class="col">Passengers:</div>
+			</div>
+			<div id="result-3" class="row white padding">
+			</div>
+		</div>
+		<!-- TABLE END -->
+
+		<!-- PAGINATION BUTTONS START people -->
+		<div class="row">
+			<div class="col"></div>
+			<div class="col">
+				<button class="btn btn-warning center" id="prevBtn">PREV</button>
+			</div>
+			<div class="col">
+				<button class="btn btn-warning center" id="nextBtn">NEXT</button>
+			</div>
+			<div class="col"></div>
+		</div>
+		<!-- PAGINATION BUTTONS END -->
+		<!-- Pagination buttons ships -->
+		<div class="row">
+			<div class="col"></div>
+			<div class="col">
+				<button class="btn btn-warning center" id="prevBtn-ships">PREV</button>
+			</div>
+			<div class="col">
+				<button class="btn btn-warning center" id="nextBtn-ships">NEXT</button>
+			</div>
+			<div class="col"></div>
+		</div>
+		<!-- End -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
